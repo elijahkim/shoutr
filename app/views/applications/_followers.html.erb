@@ -1,3 +1,3 @@
-<p><%= current_user.username %> has <%= pluralize(current_user.followers.count, "follower") %></p>
+<p><%= user.username %> has <%= pluralize(user.followers.count, "follower") %></p>
 
-<p><%= current_user.username %> is following <%= pluralize(current_user.followees.count, "user") %></p>
+<p><%= user.username %> is following <%= pluralize(user.followees.count, "user") %></p>

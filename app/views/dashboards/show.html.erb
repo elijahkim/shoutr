@@ -1,6 +1,6 @@
 <h1><%= current_user.username %>'s Dashboard</h1>
 
-<%= render "applications/followers" %>
+<%= render "applications/followers", user: current_user %>
 
 <%= form_for @text_shout do |f| %>
   <%= f.label :body, "Shout here:" %>
