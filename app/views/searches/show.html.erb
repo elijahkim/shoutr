@@ -2,7 +2,7 @@
 
 <h2>Shout Results</h2>
 
-<%= render @shouts %>
+<%= render @shouts.order(created_at: :desc) %>
 
 <h2>User Results</h2>
 
